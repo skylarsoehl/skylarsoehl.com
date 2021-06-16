@@ -1,10 +1,9 @@
 <template>
-  <div>
-    <div class="background"></div>
+  <div class="background">
     <div class="blurb-wrapper">
       <p class="blurb-text">
-        Welcome to my little corner of the web. I am a curious person driven by
-        compassion, social justice, and adventure.
+        Welcome to my little corner of the web. I am a curious person motivated
+        by compassion, social justice, and human connection.
       </p>
       <p class="instruction">Scroll to view my work</p>
     </div>
@@ -27,9 +26,7 @@ export default {}
 }
 
 .blurb-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   pointer-events: none;
   mix-blend-mode: luminosity;
 }
@@ -45,7 +42,7 @@ export default {}
   position: relative;
   display: block;
   width: auto;
-  margin: 32vh 12vw 0 8vw;
+  margin: 32vh 18vw 0 8vw;
   padding-right: 24vw;
   color: #efe7e0;
 }
