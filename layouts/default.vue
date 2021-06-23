@@ -1,5 +1,6 @@
 <template>
-  <div class="app">
+  <div>
+    <Nav />
     <Nuxt />
   </div>
 </template>
@@ -15,12 +16,46 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+header {
+  position: fixed;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 2;
+}
+
+h1 {
+  font-family: Neue Haas Unica W1G;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  color: #efe7e0;
+}
+
+.serif {
+  font-family: Kings Caslon;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 47px;
+}
+
+.slide-bottom-enter-active,
+.slide-bottom-leave-active {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+.slide-bottom-enter,
+.slide-bottom-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 15px, 0);
 }
 </style>

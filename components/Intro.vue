@@ -1,7 +1,8 @@
 <template>
-  <div class="background">
-    <div class="blurb-wrapper">
-      <p class="blurb-text">
+  <div>
+    <div class="background"></div>
+    <div class="blurb-wrapper blurb-item">
+      <p class="blurb-intro blurb-item">
         Welcome to my little corner of the web. I am a curious person motivated
         by compassion, social justice, and human connection.
       </p>
@@ -16,35 +17,38 @@ export default {}
 
 <style>
 .background {
-  width: 100%;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-image: url('@/assets/images/smoke.gif');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  overflow: hidden;
 }
 
 .blurb-wrapper {
-  position: relative;
-  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   mix-blend-mode: luminosity;
 }
 
-.blurb-text {
+.blurb-item {
+  text-align: center;
+}
+
+.blurb-intro {
   font-family: Neue Haas Unica W1G;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 54px;
   line-height: 140.62%;
-  /* or 90px */
-
-  position: relative;
-  display: block;
-  width: auto;
-  margin: 32vh 18vw 0 8vw;
-  padding-right: 24vw;
   color: #efe7e0;
+  max-width: 900px;
 }
 
 .instruction {
@@ -54,7 +58,5 @@ export default {}
   font-size: 48px;
   line-height: 90.12%;
   color: #73688a;
-  text-align: center;
-  margin: 10vh 0 0;
 }
 </style>
