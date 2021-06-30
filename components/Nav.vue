@@ -7,7 +7,9 @@
     <div>
       <div class="nav-flex">
         <h1 class="nav-item">
-          Skylar Soehl<span class="name-italic">-Gutierrez</span>
+          <NuxtLink class="nav-link" to="/">
+            Skylar Soehl<span class="name-italic">-Gutierrez</span></NuxtLink
+          >
         </h1>
         <div class="nav-item link-flex">
           <p>item 1</p>
@@ -51,6 +53,17 @@ h1 {
   font-size: 38px;
   line-height: 47px;
   color: #efe7e0;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: 800ms;
+  color: #efe7e0;
+}
+
+.nav-link:hover {
+  transition: 800ms;
+  color: #f83c22;
 }
 
 .name-italic {

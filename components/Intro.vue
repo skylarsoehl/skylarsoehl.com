@@ -35,7 +35,7 @@ export default {}
   align-items: center;
   align-content: center;
   mix-blend-mode: luminosity;
-  margin-top: 5vw;
+  margin-top: -3rem;
 }
 
 .blurb-item {
