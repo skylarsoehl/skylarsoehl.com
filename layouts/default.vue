@@ -7,8 +7,8 @@
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: Neue Haas Unica W1G, 'Source Sans Pro', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -19,6 +19,9 @@ html {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding-top: 50px;
+  padding-left: 5.2vw;
+  padding-right: 5.2vw;
 }
 
 header {
@@ -32,15 +35,6 @@ header {
 
   z-index: 2;
 }
-
-h1 {
-  font-family: Neue Haas Unica W1G;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  color: #efe7e0;
-}
-
 .serif {
   font-family: Kings Caslon;
   font-style: italic;
