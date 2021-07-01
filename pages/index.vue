@@ -10,4 +10,10 @@
 export default {}
 </script>
 
-<style></style>
+<style>
+.container {
+  padding-top: 50px;
+  padding-left: 5.2vw;
+  padding-right: 5.2vw;
+}
+</style>

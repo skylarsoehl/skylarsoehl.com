@@ -4,16 +4,30 @@
       sticky: scrollY > 700,
     }"
   >
-    <div>
+    <div class="nav-container">
       <div class="nav-flex">
         <h1 class="nav-item">
-          <NuxtLink class="nav-link" to="/">
+          <NuxtLink
+            class="nav-link"
+            :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            to="/"
+          >
             Skylar Soehl<span class="name-italic">-Gutierrez</span></NuxtLink
           >
         </h1>
         <div class="nav-item link-flex">
-          <p>item 1</p>
-          <p>item 2</p>
+          <NuxtLink
+            class="nav-link"
+            :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            to="/"
+            >Fun</NuxtLink
+          >
+          <NuxtLink
+            class="nav-link"
+            :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            to="/"
+            >About</NuxtLink
+          >
         </div>
       </div>
     </div>
@@ -40,11 +54,14 @@ export default {
 nav {
   position: relative;
   z-index: 2;
-  width: 100%;
-  box-sizing: border-box;
+  width: 100vw;
   pointer-events: auto;
-  color: #efe7e0;
   transition: 100ms;
+}
+
+.nav-container {
+  padding-left: 5.2vw;
+  padding-right: 5.2vw;
 }
 
 h1 {
@@ -52,12 +69,18 @@ h1 {
   font-weight: bold;
   font-size: 38px;
   line-height: 47px;
-  color: #efe7e0;
 }
 
 .nav-link {
   text-decoration: none;
   transition: 800ms;
+}
+
+.nav-link-sticky {
+  color: black;
+}
+
+.nav-link-fixed {
   color: #efe7e0;
 }
 
@@ -76,10 +99,11 @@ h1 {
 
 .sticky {
   position: fixed;
-  margin-top: -8rem;
+  padding-left: -3rem;
   padding-right: 5.2vw;
+  margin-top: -10rem;
   transition: 150ms;
-  background-color: blue;
+  background-color: #efe7e0;
 }
 
 .nav-flex {
@@ -96,7 +120,7 @@ h1 {
   justify-content: flex-end;
 }
 
-.link-flex > p {
+.link-flex > * {
   margin-right: 100px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtLink :to="`project${url}`">{{ name }}</NuxtLink>
+    <NuxtLink class="project-link" :to="`project${url}`">{{ name }}</NuxtLink>
   </div>
 </template>
 
@@ -19,4 +19,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.project-link {
+  font-family: Kings Caslon;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 109.63%;
+}
+</style>

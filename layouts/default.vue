@@ -19,9 +19,7 @@ html {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding-top: 50px;
-  padding-left: 5.2vw;
-  padding-right: 5.2vw;
+  background-color: #efe7e0;
 }
 
 header {

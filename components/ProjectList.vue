@@ -1,11 +1,23 @@
 <template>
   <div class="container">
-    <ProjectLink name="Payyo" url="/payyo" />
-    <ProjectLink name="The Climate Crisis is Racist" url="/tccir" />
-    <ProjectLink name="Global Resilience Institute" url="/gri" />
-    <ProjectLink name="Fubu" url="/fubu" />
-    <ProjectLink name="Interventions" url="/interventions" />
-    <ProjectLink name="Butter" url="/butter" />
+    <ProjectLink class="project-link" name="Payyo" url="/payyo" />
+    <ProjectLink
+      class="project-link"
+      name="The Climate Crisis is Racist"
+      url="/tccir"
+    />
+    <ProjectLink
+      class="project-link"
+      name="Global Resilience Institute"
+      url="/gri"
+    />
+    <ProjectLink class="project-link" name="Fubu" url="/fubu" />
+    <ProjectLink
+      class="project-link"
+      name="Interventions"
+      url="/interventions"
+    />
+    <ProjectLink class="project-link" name="Butter" url="/butter" />
   </div>
 </template>
 
@@ -17,5 +29,11 @@ export default {}
 .container {
   margin-top: 10rem;
   font-size: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-link {
+  margin: 3rem 0;
 }
 </style>
