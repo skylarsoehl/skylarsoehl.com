@@ -53,8 +53,8 @@ export default {
 <style>
 nav {
   position: relative;
+  margin-top: 30px;
   z-index: 2;
-  width: 100vw;
   pointer-events: auto;
   transition: 100ms;
 }
@@ -99,9 +99,11 @@ h1 {
 
 .sticky {
   position: fixed;
+  margin-left: -10px;
   padding-left: -3rem;
   padding-right: 5.2vw;
   margin-top: -10rem;
+  width: 100vw;
   transition: 150ms;
   background-color: #efe7e0;
 }
