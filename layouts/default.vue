@@ -43,7 +43,7 @@ header {
 
 .slide-bottom-enter-active,
 .slide-bottom-leave-active {
-  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+  transition: opacity 10s ease-in-out, transform 10s ease-in-out;
 }
 .slide-bottom-enter,
 .slide-bottom-leave-to {

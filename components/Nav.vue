@@ -67,7 +67,7 @@ nav {
 h1 {
   font-family: Neue Haas Unica W1G;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 47px;
 }
 
