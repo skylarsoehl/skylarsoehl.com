@@ -22,7 +22,7 @@ export default {}
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('@/assets/images/smoke.gif');
+  background-image: url('@/assets/images/home/smoke.gif');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
