@@ -7,8 +7,8 @@
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: Neue Haas Unica W1G, 'Source Sans Pro', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -19,6 +19,7 @@ html {
   width: 100%;
   height: 100%;
   margin: 0;
+  background-color: #efe7e0;
 }
 
 header {
@@ -32,15 +33,6 @@ header {
 
   z-index: 2;
 }
-
-h1 {
-  font-family: Neue Haas Unica W1G;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  color: #efe7e0;
-}
-
 .serif {
   font-family: Kings Caslon;
   font-style: italic;
@@ -51,7 +43,7 @@ h1 {
 
 .slide-bottom-enter-active,
 .slide-bottom-leave-active {
-  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+  transition: opacity 10s ease-in-out, transform 10s ease-in-out;
 }
 .slide-bottom-enter,
 .slide-bottom-leave-to {

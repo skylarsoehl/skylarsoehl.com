@@ -4,13 +4,30 @@
       sticky: scrollY > 700,
     }"
   >
-    <div>
+    <div class="nav-container">
       <div class="nav-flex">
-        <h1 class="nav-item">Skylar Soehl-Gutierrez</h1>
+        <h1 class="nav-item">
+          <NuxtLink
+            class="nav-link"
+            :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            to="/"
+          >
+            Skylar Soehl<span class="name-italic">-Gutierrez</span></NuxtLink
+          >
+        </h1>
         <div class="nav-item link-flex">
-          <p>item 1</p>
-          <p>item 2</p>
-          <p>{{ scrollY }}</p>
+          <NuxtLink
+            class="nav-link"
+            :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            to="/"
+            >Fun</NuxtLink
+          >
+          <NuxtLink
+            class="nav-link"
+            :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            to="/"
+            >About</NuxtLink
+          >
         </div>
       </div>
     </div>
@@ -36,21 +53,59 @@ export default {
 <style>
 nav {
   position: relative;
+  margin-top: 30px;
   z-index: 2;
-  width: 100%;
-  box-sizing: border-box;
-  padding-top: 3vw;
-  padding-left: 3vw;
-  padding-right: 3vw;
   pointer-events: auto;
-  color: #efe7e0;
   transition: 100ms;
+}
+
+.nav-container {
+  padding-left: 5.2vw;
+  padding-right: 5.2vw;
+}
+
+h1 {
+  font-family: Neue Haas Unica W1G;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: 800ms;
+}
+
+.nav-link-sticky {
+  color: black;
+}
+
+.nav-link-fixed {
+  color: #efe7e0;
+}
+
+.nav-link:hover {
+  transition: 800ms;
+  color: #f83c22;
+}
+
+.name-italic {
+  font-family: Kings Caslon;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 47px;
 }
 
 .sticky {
   position: fixed;
+  margin-left: -10px;
+  padding-left: -3rem;
+  padding-right: 5.2vw;
+  margin-top: -10rem;
+  width: 100vw;
   transition: 150ms;
-  background-color: blue;
+  background-color: #efe7e0;
 }
 
 .nav-flex {
@@ -67,7 +122,7 @@ nav {
   justify-content: flex-end;
 }
 
-.link-flex > p {
+.link-flex > * {
   margin-right: 100px;
 }
 </style>
