@@ -65,9 +65,22 @@
         </p>
       </div>
       <div class="scope">
-        <div class="year"></div>
-        <div class="role"></div>
-        <div class="discipline"></div>
+        <h2>Project Scope</h2>
+        <div class="year category">
+          <p class="title">year</p>
+          <p class="category-value">2021</p>
+        </div>
+        <div class="role category">
+          <p class="title">role</p>
+          <p class="category-value">Designer</p>
+        </div>
+        <div class="collaborators category">
+          <p class="title">collaborators</p>
+        </div>
+        <div class="disciplines category">
+          <p class="title">disciplines</p>
+          <ul></ul>
+        </div>
       </div>
     </div>
   </div>
@@ -178,11 +191,30 @@ h1 {
 }
 
 .overview {
+  margin-bottom: 0;
+  display: flex;
+  position: relative;
 }
 
 .description {
+  padding: 110px 10vw;
   font-family: Neue Haas Unica W1G;
   font-size: 36px;
   line-height: 140.62%;
+  width: 80%;
+}
+
+.scope {
+  width: 20%;
+  padding: 110px 10vw;
+  font-size: 18px;
+  background: #efe7e0;
+}
+
+.category > .title {
+  color: #aa9c8e;
+  font-size: 16px;
+  font-variant: small-caps;
+  font-weight: 600;
 }
 </style>
