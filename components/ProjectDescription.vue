@@ -64,6 +64,11 @@
           the native people of the Ifugao province.
         </p>
       </div>
+      <div class="scope">
+        <div class="year"></div>
+        <div class="role"></div>
+        <div class="discipline"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -132,7 +137,7 @@ export default {}
 h1 {
   font-size: 10vw;
   line-height: 7.5vw;
-  color: black;
+  color: #c7bfb8;
   font-family: Kings Caslon;
   font-style: italic;
   font-weight: normal;
@@ -160,19 +165,24 @@ h1 {
 }
 
 .bottom-link-text {
-  font-family: Kings Caslon;
-  font-style: italic;
+  font-family: Neue Haas Unica W1G;
   font-weight: bold;
   font-size: 30px;
-  color: white;
+  color: #fff;
 }
 
 .icon-arrow-down {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .overview {
+}
+
+.description {
+  font-family: Neue Haas Unica W1G;
+  font-size: 36px;
+  line-height: 140.62%;
 }
 </style>

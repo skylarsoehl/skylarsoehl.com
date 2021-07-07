@@ -1,9 +1,13 @@
 <template>
-  <div>
+  <div class="project-page">
     <ProjectDescription />
     <Nuxt />
     <Footer />
   </div>
 </template>
 
-<style></style>
+<style>
+.project-page {
+  background-color: #fff;
+}
+</style>
