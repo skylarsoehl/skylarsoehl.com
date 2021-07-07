@@ -94,6 +94,9 @@ export default {}
 </script>
 
 <style>
+.container {
+  margin-bottom: 8rem;
+}
 .landing {
   position: relative;
   display: -webkit-box;
