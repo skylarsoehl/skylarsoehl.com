@@ -23,6 +23,10 @@ html {
   background-color: #efe7e0;
 }
 
+body {
+  margin: 0px;
+}
+
 header {
   position: fixed;
   width: 100%;
