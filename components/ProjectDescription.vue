@@ -83,6 +83,9 @@
         </div>
       </div>
     </div>
+    <div class="curtain-img">
+      <img src="@/assets/images/payyo/rice-terraces-1.jpg" alt="" />
+    </div>
   </div>
 </template>
 
@@ -216,5 +219,16 @@ h1 {
   font-size: 16px;
   font-variant: small-caps;
   font-weight: 600;
+}
+
+.curtain-img {
+  height: 650px;
+  width: 100%;
+}
+
+.curtain-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>
