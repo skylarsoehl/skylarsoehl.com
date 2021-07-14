@@ -6,9 +6,9 @@
   >
     <div class="nav-container">
       <div class="nav-flex">
-        <h1 class="nav-item">
+        <h1 class="name nav-item">
           <NuxtLink
-            class="nav-link"
+            class="link"
             :class="scrollY > 900 ? 'nav-link-sticky' : 'nav-link-fixed'"
             to="/"
           >
@@ -17,13 +17,13 @@
         </h1>
         <div class="nav-item link-flex">
           <NuxtLink
-            class="nav-link"
+            class="link nav-link"
             :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
             to="/"
             >Fun</NuxtLink
           >
           <NuxtLink
-            class="nav-link"
+            class="link nav-link"
             :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
             to="/"
             >About</NuxtLink
@@ -71,22 +71,26 @@ h1 {
   line-height: 47px;
 }
 
-.nav-link {
+.link {
   text-decoration: none;
   transition: 800ms;
 }
 
+.nav-link {
+  font-size: 22px;
+  font-weight: bold;
+}
 .nav-link-sticky {
-  color: black;
+  color: #f83c22;
 }
 
 .nav-link-fixed {
   color: #efe7e0;
 }
 
-.nav-link:hover {
+.link:hover {
   transition: 800ms;
-  color: #f83c22;
+  color: #000;
 }
 
 .name-italic {
@@ -107,6 +111,7 @@ h1 {
 .nav-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-item {

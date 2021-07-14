@@ -11,7 +11,6 @@
       name="Global Resilience Institute"
       url="/gri"
     />
-    <ProjectLink class="project-link" name="Fubu" url="/fubu" />
     <ProjectLink
       class="project-link"
       name="Interventions"
@@ -28,7 +27,6 @@ export default {}
 <style>
 .project-container {
   position: relative;
-  padding-top: 50px;
   padding-left: 5.2vw;
   padding-right: 5.2vw;
 }
