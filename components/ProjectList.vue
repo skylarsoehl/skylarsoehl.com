@@ -40,4 +40,11 @@ export default {}
   overflow: hidden;
   margin: 2rem 0;
 }
+
+@media only screen and (max-width: 770px) {
+  .project-link {
+    text-align: center;
+    justify-content: center;
+  }
+}
 </style>

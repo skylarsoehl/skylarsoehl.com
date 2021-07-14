@@ -5764,6 +5764,10 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
+"nuxt-ssr-screen-size@github:hugojerez/nuxt-ssr-screen-size":
+  version "1.0.0"
+  resolved "https://codeload.github.com/hugojerez/nuxt-ssr-screen-size/tar.gz/d1a23f89b6e6fcfc49b4e53bd2dd3d92519cfbb9"
+
 nuxt@^2.15.3:
   version "2.15.7"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.15.7.tgz#45332e3b00ba5c1cf04688d42373c8ed7ef4dca7"

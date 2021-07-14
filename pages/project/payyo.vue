@@ -12,14 +12,7 @@
         mollit anim id est laborum.
       </p>
     </section>
-    <section class="project-images">
-      <img
-        class="moodboard"
-        src="@/assets/images/payyo/payyo_moodboard.png"
-        alt="moodboard showing images of ifugao people, native animals, different rice terraces, indigenous textiles, patterns, and font options"
-      />
-      <img src="@/assets/images/payyo/week1_logos.jpg" alt="" />
-    </section>
+    <section class="project-images"></section>
   </div>
 </template>
 

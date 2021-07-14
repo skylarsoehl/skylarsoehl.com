@@ -1,7 +1,7 @@
 <template>
   <nav
     :class="{
-      sticky: scrollY > 900,
+      sticky: scrollY > screenHeight,
     }"
   >
     <div class="nav-container">
@@ -9,7 +9,9 @@
         <h1 class="name nav-item">
           <NuxtLink
             class="link"
-            :class="scrollY > 900 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            :class="
+              scrollY > screenHeight ? 'nav-link-sticky' : 'nav-link-fixed'
+            "
             to="/"
           >
             Skylar Soehl<span class="name-italic">-Gutierrez</span></NuxtLink
@@ -18,13 +20,17 @@
         <div class="nav-item link-flex">
           <NuxtLink
             class="link nav-link"
-            :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            :class="
+              scrollY > screenHeight ? 'nav-link-sticky' : 'nav-link-fixed'
+            "
             to="/"
             >Fun</NuxtLink
           >
           <NuxtLink
             class="link nav-link"
-            :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            :class="
+              scrollY > screenHeight ? 'nav-link-sticky' : 'nav-link-fixed'
+            "
             to="/"
             >About</NuxtLink
           >
@@ -35,16 +41,20 @@
 </template>
 
 <script>
+import NuxtSSRScreenSize from 'nuxt-ssr-screen-size'
 export default {
+  mixins: [NuxtSSRScreenSize.NuxtSSRScreenSizeMixin],
   data() {
     return {
       scrollY: 0,
+      screenHeight: 0,
     }
   },
   mounted() {
     window.addEventListener('scroll', () => {
       this.scrollY = window.scrollY
     })
+    this.screenHeight = this.$vssHeight
   },
   transitions: 'slide-bottom',
 }
@@ -123,7 +133,37 @@ h1 {
   justify-content: flex-end;
 }
 
-.link-flex > * {
+.link-flex > a:first-child {
   margin-right: 100px;
+}
+
+@media only screen and (max-width: 770px) {
+  h1 {
+    font-size: 30px;
+  }
+  .name-italic {
+    font-size: 34px;
+  }
+  .nav-link {
+    font-size: 24px;
+  }
+  .link-flex > a:first-child {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 16px;
+  }
+  .name-italic {
+    font-size: 18px;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  .link-flex > a:first-child {
+    margin-right: 50px;
+  }
 }
 </style>

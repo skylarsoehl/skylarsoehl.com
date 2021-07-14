@@ -69,4 +69,28 @@ export default {}
   line-height: 90.12%;
   color: #73688a;
 }
+
+@media only screen and (max-width: 770px) {
+  .blurb-wrapper {
+    width: 80%;
+    margin-left: 5rem;
+  }
+
+  .blurb-intro,
+  .instruction {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .blurb-wrapper {
+    width: 80%;
+    margin-left: 36px;
+  }
+
+  .blurb-intro,
+  .instruction {
+    font-size: 28px;
+  }
+}
 </style>

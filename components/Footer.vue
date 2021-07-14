@@ -62,4 +62,16 @@ footer {
   font-size: 18px;
   line-height: 119.6%;
 }
+@media only screen and (max-width: 420px) {
+  footer {
+    flex-direction: column;
+  }
+  .social-links > a {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
 </style>
