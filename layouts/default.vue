@@ -23,6 +23,10 @@ html {
   background-color: #efe7e0;
 }
 
+/* * {
+  border: 1px solid red;
+} */
+
 body {
   margin: 0px;
 }

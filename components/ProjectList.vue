@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="project-container">
     <ProjectLink class="project-link" name="Payyo" url="/payyo" />
     <ProjectLink
       class="project-link"
@@ -26,14 +26,20 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin-top: 10rem;
-  font-size: 32px;
-  display: flex;
-  flex-direction: column;
+.project-container {
+  position: relative;
+  padding-top: 50px;
+  padding-left: 5.2vw;
+  padding-right: 5.2vw;
 }
 
 .project-link {
-  margin: 3rem 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  overflow: hidden;
+  margin: 2rem 0;
 }
 </style>

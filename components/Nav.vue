@@ -1,7 +1,7 @@
 <template>
   <nav
     :class="{
-      sticky: scrollY > 700,
+      sticky: scrollY > 900,
     }"
   >
     <div class="nav-container">
@@ -9,7 +9,7 @@
         <h1 class="nav-item">
           <NuxtLink
             class="nav-link"
-            :class="scrollY > 700 ? 'nav-link-sticky' : 'nav-link-fixed'"
+            :class="scrollY > 900 ? 'nav-link-sticky' : 'nav-link-fixed'"
             to="/"
           >
             Skylar Soehl<span class="name-italic">-Gutierrez</span></NuxtLink
@@ -52,11 +52,11 @@ export default {
 
 <style>
 nav {
-  position: relative;
-  margin-top: 30px;
+  position: absolute;
+  width: 100%;
+  padding-top: 30px;
   z-index: 2;
   pointer-events: auto;
-  transition: 100ms;
 }
 
 .nav-container {
@@ -99,12 +99,8 @@ h1 {
 
 .sticky {
   position: fixed;
-  margin-left: -10px;
-  padding-left: -3rem;
-  padding-right: 5.2vw;
-  margin-top: -10rem;
   width: 100vw;
-  transition: 150ms;
+  transition: 200ms;
   background-color: #efe7e0;
 }
 

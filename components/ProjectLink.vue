@@ -33,7 +33,6 @@ export default {
   font-style: italic;
   font-weight: normal;
   font-size: 96px;
-  line-height: 109.63%;
 }
 
 .blur {
