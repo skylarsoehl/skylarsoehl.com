@@ -61,7 +61,8 @@
           various types of collateral. I chose the The Rice Terraces of the
           Philippine Cordilleras because I was inspired by the site’s story of
           colonial resistance and wanted to design a brand that paid hommeage to
-          the native people of the Ifugao province.
+          the native people of the Ifugao province. "Payyo" is name of the land
+          in the native language.
         </p>
       </div>
       <div class="scope">
