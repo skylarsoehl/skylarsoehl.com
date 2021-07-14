@@ -25,7 +25,7 @@
         />
       </div>
       <div class="text-container">
-        <h1>Payyo</h1>
+        <h1 class="project-title">Payyo</h1>
       </div>
       <div class="bottom-link">
         <div class="link-container">
@@ -154,7 +154,7 @@ export default {}
   margin-top: 8rem;
 }
 
-h1 {
+.project-title {
   font-size: 10vw;
   line-height: 7.5vw;
   color: #c7bfb8;

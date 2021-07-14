@@ -33,7 +33,6 @@ export default {
   font-style: italic;
   font-weight: normal;
   font-size: 96px;
-  line-height: 109.63%;
 }
 
 .blur {
@@ -103,6 +102,17 @@ export default {
   }
   100% {
     transform: translate(0.25px, -0.75px) rotate(0deg);
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .project-link {
+    font-size: 56px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .project-link {
+    font-size: 48px;
   }
 }
 </style>
